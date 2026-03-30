@@ -1,0 +1,18 @@
+{
+  "name": "silo-reader-web",
+  "version": "0.1.0",
+  "description": "Web example: import a .silo file into IndexedDB and query it",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "npx http-server dist -p 3000 -o"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "http-server": "^14.1.0"
+  },
+  "dependencies": {
+    "jszip": "^3.10.0",
+    "idb": "^8.0.0"
+  }
+}
