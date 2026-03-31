@@ -2,23 +2,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "SiloReader",
+    name: "SiloExample",
     platforms: [.macOS(.v13), .iOS(.v16)],
     products: [
-        .library(name: "SiloReader", targets: ["SiloReader"]),
-        .executable(name: "silo-reader", targets: ["SiloReaderCLI"]),
+        .executable(name: "silo-example", targets: ["SiloExample"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/nicklockwood/GRDB.swift.git", from: "6.24.0"),
+        .package(path: "../../sdk/swift"),
     ],
     targets: [
-        .target(
-            name: "SiloReader",
-            dependencies: [.product(name: "GRDB", package: "GRDB.swift")]
-        ),
         .executableTarget(
-            name: "SiloReaderCLI",
-            dependencies: ["SiloReader"]
+            name: "SiloExample",
+            dependencies: [.product(name: "SiloKit", package: "swift")],
+            path: "Sources"
         ),
     ]
 )

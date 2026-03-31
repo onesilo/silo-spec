@@ -4,6 +4,85 @@ A `.silo` file is a self-contained package of structured knowledge designed to b
 
 Unlike documents, spreadsheets, or chat exports, a silo carries structured memories, entities, relationships, and configuration that allow any AI system to understand and reason over the knowledge inside.
 
+## SDKs
+
+Official SDKs for reading and writing `.silo` files:
+
+| Platform | Package | Path |
+|----------|---------|------|
+| **Swift** (iOS, macOS) | `SiloKit` | [`sdk/swift/`](sdk/swift/) |
+| **TypeScript** (Web, Node) | `@onesilo/silo-sdk` | [`sdk/js/`](sdk/js/) |
+
+### Swift (SPM)
+
+```swift
+// Package.swift
+dependencies: [
+    .package(url: "https://github.com/onesilo/silo-spec.git", from: "0.1.0"),
+],
+targets: [
+    .target(dependencies: [.product(name: "SiloKit", package: "silo-spec")]),
+]
+```
+
+```swift
+import SiloKit
+
+// Create a silo
+let silo = SiloWriter(title: "Italy Trip", mode: .augmented)
+    .addFact("Budget is $5K per person", key: "budget")
+    .addDecision("Ravello over Positano", why: "Less crowded in June")
+    .addEntity(name: "Marco", type: .person)
+    .setWelcome(summary: "Two-week Italy trip plan", prompts: ["What's the plan?"])
+    .build()
+
+let fileURL = try silo.createPackage(at: outputDir, name: "italy-trip")
+
+// Open a silo
+let package = try SiloPackage.open(at: fileURL)
+print(package.manifest.title)       // "Italy Trip"
+print(package.content.memories.count) // 2
+
+// Validate
+let result = SiloValidator.validate(package: package)
+print(result.isValid) // true
+
+// Mode enforcement
+let prompt = SiloModeEnforcer.systemPrompt(for: .augmented, siloTitle: "Italy Trip")
+```
+
+### TypeScript (npm)
+
+```bash
+npm install @onesilo/silo-sdk
+```
+
+```typescript
+import { SiloWriter, openSiloPackage, validatePackage, getModeSystemPrompt } from "@onesilo/silo-sdk";
+
+// Create a silo
+const silo = new SiloWriter("Italy Trip", "augmented")
+  .addFact("Budget is $5K per person", { key: "budget" })
+  .addDecision("Ravello over Positano", { why: "Less crowded in June" })
+  .addEntity("Marco", "person")
+  .setWelcome({ summary: "Two-week Italy trip plan", prompts: ["What's the plan?"] })
+  .build();
+
+const blob = await silo.toBlob(); // .silo zip as Blob
+
+// Open a silo
+const pkg = await openSiloPackage(blob);
+console.log(pkg.manifest.title);         // "Italy Trip"
+console.log(pkg.content.memories.length); // 2
+
+// Validate
+const result = validatePackage(pkg);
+console.log(result.isValid); // true
+
+// Mode enforcement
+const prompt = getModeSystemPrompt("augmented", "Italy Trip");
+```
+
 ## What's in a .silo file?
 
 A `.silo` file is a zip archive containing:
@@ -76,69 +155,10 @@ Complete, valid `.silo` packages:
 - [`examples/trip-planning/`](examples/trip-planning/) — a two-week Italy trip with itinerary, decisions, restaurants, and open items
 - [`examples/company-knowledge-base/`](examples/company-knowledge-base/) — an internal company knowledge base with vision, strategy, team, financials, and competitive landscape
 
-Reference implementations:
+Demo apps using the SDKs:
 
-- [`examples/ios/`](examples/ios/) — Swift project that imports a `.silo` file into SQLite
-- [`examples/web/`](examples/web/) — TypeScript project that imports a `.silo` file into IndexedDB
-
-## Quick Start
-
-### Reading a .silo file
-
-```python
-import zipfile
-import json
-
-with zipfile.ZipFile("example.silo", "r") as z:
-    manifest = json.loads(z.read("manifest.json"))
-    silo = json.loads(z.read("silo.json"))
-
-print(f"Title: {manifest['title']}")
-print(f"Mode: {manifest['mode']}")
-print(f"Memories: {len(silo['memories'])}")
-print(f"Entities: {len(silo['entities'])}")
-```
-
-### Creating a .silo file
-
-```python
-import zipfile
-import json
-from datetime import datetime
-
-manifest = {
-    "spec": "0.1.0",
-    "min_reader": "0.1.0",
-    "id": "silo_example_001",
-    "title": "My Project",
-    "created_at": datetime.utcnow().isoformat() + "Z",
-    "updated_at": datetime.utcnow().isoformat() + "Z",
-    "mode": "open"
-}
-
-silo = {
-    "memories": [
-        {
-            "id": "m_001",
-            "type": "fact",
-            "content": "The project deadline is April 15, 2026.",
-            "created_at": datetime.utcnow().isoformat() + "Z",
-            "updated_at": datetime.utcnow().isoformat() + "Z"
-        }
-    ],
-    "entities": [],
-    "relationships": [],
-    "topics": [],
-    "memory_entity_links": [],
-    "memory_ref_links": [],
-    "refs": [],
-    "config": {}
-}
-
-with zipfile.ZipFile("my-project.silo", "w") as z:
-    z.writestr("manifest.json", json.dumps(manifest, indent=2))
-    z.writestr("silo.json", json.dumps(silo, indent=2))
-```
+- [`examples/ios/`](examples/ios/) — Swift CLI that reads, creates, and validates `.silo` files
+- [`examples/web/`](examples/web/) — TypeScript script that creates a silo and demonstrates validation and mode enforcement
 
 ## License
 
