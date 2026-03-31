@@ -1,0 +1,16 @@
+{
+  "name": "silo-web-example",
+  "version": "0.1.0",
+  "description": "Web example demonstrating the @onesilo/silo-sdk",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/demo.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  },
+  "dependencies": {
+    "@onesilo/silo-sdk": "file:../../sdk/js"
+  }
+}

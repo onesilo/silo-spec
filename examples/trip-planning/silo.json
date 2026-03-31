@@ -1,0 +1,406 @@
+{
+  "memories": [
+    {
+      "id": "m_001",
+      "type": "fact",
+      "content": "The trip covers Rome, Florence, and the Amalfi Coast (Ravello), running June 12–22, 2026.",
+      "created_at": "2026-03-15T10:30:00Z",
+      "updated_at": "2026-03-15T10:30:00Z",
+      "metadata": {
+        "key": "destination",
+        "confidence": 1.0,
+        "category": "itinerary"
+      }
+    },
+    {
+      "id": "m_002",
+      "type": "fact",
+      "content": "Two travelers, budget of $5,000 per person not including flights.",
+      "created_at": "2026-03-15T10:30:00Z",
+      "updated_at": "2026-03-15T10:30:00Z",
+      "metadata": {
+        "key": "budget",
+        "confidence": 1.0,
+        "category": "logistics"
+      }
+    },
+    {
+      "id": "m_003",
+      "type": "fact",
+      "content": "Accommodation style: Airbnb apartments with kitchen access throughout the trip.",
+      "created_at": "2026-03-15T10:30:00Z",
+      "updated_at": "2026-03-15T10:30:00Z",
+      "metadata": {
+        "key": "accommodation_style",
+        "confidence": 1.0,
+        "category": "logistics"
+      }
+    },
+    {
+      "id": "m_004",
+      "type": "fact",
+      "content": "Morning activities with afternoons free for wandering. Dinners around 8:30pm local style.",
+      "created_at": "2026-03-15T10:30:00Z",
+      "updated_at": "2026-03-15T10:30:00Z",
+      "metadata": {
+        "key": "pace",
+        "confidence": 1.0,
+        "category": "preferences"
+      }
+    },
+    {
+      "id": "m_005",
+      "type": "fact",
+      "content": "Dining philosophy: local trattorias over tourist restaurants. Cooking 3–4 meals at the Airbnb using market ingredients.",
+      "created_at": "2026-03-15T10:30:00Z",
+      "updated_at": "2026-03-15T10:30:00Z",
+      "metadata": {
+        "key": "dining",
+        "confidence": 1.0,
+        "category": "preferences"
+      }
+    },
+    {
+      "id": "m_006",
+      "type": "fact",
+      "content": "Transport Rome to Florence: high-speed train (Trenitalia Frecciarossa), approximately 1.5 hours.",
+      "created_at": "2026-03-16T09:00:00Z",
+      "updated_at": "2026-03-16T09:00:00Z",
+      "metadata": {
+        "key": "transport_rome_florence",
+        "confidence": 0.9,
+        "category": "logistics"
+      }
+    },
+    {
+      "id": "m_007",
+      "type": "fact",
+      "content": "Transport Florence to Amalfi: rental car, drive to Ravello via A1 highway with a stop in Orvieto (approximately 4.5 hours).",
+      "created_at": "2026-03-16T09:00:00Z",
+      "updated_at": "2026-03-16T09:00:00Z",
+      "metadata": {
+        "key": "transport_florence_amalfi",
+        "confidence": 0.85,
+        "category": "logistics"
+      }
+    },
+    {
+      "id": "m_008",
+      "type": "narrative",
+      "content": "Rome — June 12–15 (3 nights). Arriving at FCO mid-morning. Airbnb in Trastevere for its local feel, walkability, and evening atmosphere. Day 1 is recovery and neighborhood exploration. Day 2: Colosseum and Forum (skip-the-line 9am), afternoon in Monti. Day 3: Vatican Museums (pre-booked 8am entry), St. Peter's, afternoon free. Evenings unstructured.",
+      "created_at": "2026-03-17T11:00:00Z",
+      "updated_at": "2026-03-17T11:00:00Z",
+      "metadata": {
+        "title": "Rome Itinerary",
+        "topic": "rome",
+        "section_order": 1
+      }
+    },
+    {
+      "id": "m_009",
+      "type": "narrative",
+      "content": "Florence — June 15–18 (3 nights). Train from Rome arriving early afternoon. Airbnb near Sant'Ambrogio market for proximity to the market, quiet location, and walkability to Uffizi. Day 1 afternoon: walk to Piazzale Michelangelo for sunset. Day 2: Uffizi (timed entry 9am), leather shopping in San Lorenzo. Day 3: day trip to Chianti wine region. Last evening: splurge dinner at a restaurant recommended by Marco (Rome Airbnb host — his cousin runs a place in Oltrarno).",
+      "created_at": "2026-03-17T11:00:00Z",
+      "updated_at": "2026-03-17T11:00:00Z",
+      "metadata": {
+        "title": "Florence Itinerary",
+        "topic": "florence",
+        "section_order": 2
+      }
+    },
+    {
+      "id": "m_010",
+      "type": "narrative",
+      "content": "Amalfi Coast (Ravello) — June 18–22 (4 nights). Driving from Florence with a lunch stop in Orvieto. Ravello villa with terrace overlooking the coast. Days are unstructured: beach trips (bus to Minori or Amalfi town), cooking at the villa, possible boat tour. One day trip to Pompeii (1 hour drive). Return rental car at Naples airport June 22.",
+      "created_at": "2026-03-17T11:00:00Z",
+      "updated_at": "2026-03-17T11:00:00Z",
+      "metadata": {
+        "title": "Amalfi Coast Itinerary",
+        "topic": "amalfi",
+        "section_order": 3
+      }
+    },
+    {
+      "id": "m_011",
+      "type": "narrative",
+      "content": "Budget breakdown: Accommodation ~$2,800 total ($800 Rome, $750 Florence, $1,250 Ravello villa). Transport ~$600 (train $80, rental car + gas + tolls ~$400, misc ~$120). Food ~$2,400 ($120/day, mix of cooking and trattorias plus 2 splurge dinners). Activities ~$600 (museum entries, wine tour, possible boat tour). Buffer ~$600. Total per person: ~$3,500 with buffer, well under the $5K cap.",
+      "created_at": "2026-03-18T14:00:00Z",
+      "updated_at": "2026-03-18T14:00:00Z",
+      "metadata": {
+        "title": "Budget",
+        "topic": "budget",
+        "section_order": 4
+      }
+    },
+    {
+      "id": "m_012",
+      "type": "narrative",
+      "content": "Restaurant research: Rome — Da Enzo in Trastevere (classic Roman, book ahead), Pizzarium (pizza by the slice near Vatican), Roscioli (salumeria + restaurant). Florence — Trattoria Mario (no reservations, go early, cash only), Il Latini (loud, communal, big portions), the Oltrarno restaurant from Marco's cousin. Ravello — Cumpa Cosimo (local institution). General rule: avoid anywhere with photos on the menu or someone outside trying to seat you.",
+      "created_at": "2026-03-19T10:00:00Z",
+      "updated_at": "2026-03-19T10:00:00Z",
+      "metadata": {
+        "title": "Restaurant Research",
+        "topic": "dining",
+        "section_order": 5
+      }
+    },
+    {
+      "id": "m_013",
+      "type": "decision",
+      "content": "Chose Ravello over Positano for the coast portion. Positano is beautiful but overrun in June — overcrowded beaches, inflated prices, and difficult parking. Ravello is elevated, has the same views, better villa options at lower prices, and a more relaxed atmosphere. Parking is manageable. The trade-off is no direct beach access (need to bus/drive down), but that fits the planned pace.",
+      "created_at": "2026-03-16T15:00:00Z",
+      "updated_at": "2026-03-16T15:00:00Z",
+      "metadata": {
+        "title": "Ravello over Positano",
+        "alternatives_considered": ["Positano", "Praiano", "Atrani"],
+        "confidence": 1.0,
+        "status": "final"
+      }
+    },
+    {
+      "id": "m_014",
+      "type": "decision",
+      "content": "Airbnb apartments over hotels for the entire trip. Kitchen access is the main reason — cooking with market ingredients is part of the experience. Also more space, better value for a 2-week stay, and hosts give better local recommendations than hotel concierges.",
+      "created_at": "2026-03-15T12:00:00Z",
+      "updated_at": "2026-03-15T12:00:00Z",
+      "metadata": {
+        "title": "Airbnb over hotels",
+        "alternatives_considered": ["Boutique hotels", "Mix of both"],
+        "confidence": 1.0,
+        "status": "final"
+      }
+    },
+    {
+      "id": "m_015",
+      "type": "decision",
+      "content": "Skipped Venice entirely. June is peak season and Venice is at its worst — hot, humid, and packed with tourists. Adding it would compress the other stops or extend the trip. Better to do Venice in November on a separate trip. Three regions in two weeks is already ambitious.",
+      "created_at": "2026-03-15T14:00:00Z",
+      "updated_at": "2026-03-15T14:00:00Z",
+      "metadata": {
+        "title": "No Venice",
+        "alternatives_considered": ["Replace Florence with Venice", "Add 3 days for Venice"],
+        "confidence": 1.0,
+        "status": "final"
+      }
+    },
+    {
+      "id": "m_016",
+      "type": "decision",
+      "content": "Rent a car from Florence, not Rome. No car needed in Rome or Florence — parking is expensive and unnecessary. Pick up the car when leaving Florence for the drive south. This also enables a stop in Orvieto, which is directly on the A1 route.",
+      "created_at": "2026-03-17T09:00:00Z",
+      "updated_at": "2026-03-17T09:00:00Z",
+      "metadata": {
+        "title": "Car rental from Florence",
+        "alternatives_considered": ["Train to Naples + car from there", "Car for entire trip"],
+        "confidence": 0.9,
+        "status": "final"
+      }
+    },
+    {
+      "id": "m_017",
+      "type": "insight",
+      "content": "The trip prioritizes local immersion over tourist attractions. Choices consistently favor neighborhoods with local character (Trastevere, Sant'Ambrogio), self-catering with market ingredients, and avoiding crowded tourist infrastructure.",
+      "created_at": "2026-03-20T08:00:00Z",
+      "updated_at": "2026-03-20T08:00:00Z",
+      "metadata": {
+        "title": "Local immersion over tourism",
+        "confidence": 0.85,
+        "supporting_memory_ids": ["m_003", "m_005", "m_013", "m_014"],
+        "category": "travel_style"
+      }
+    },
+    {
+      "id": "m_018",
+      "type": "insight",
+      "content": "Pace preferences strongly favor unstructured time. Only mornings are planned; afternoons and evenings are deliberately left open. This suggests the travelers value spontaneity and recharge time over maximizing sightseeing.",
+      "created_at": "2026-03-20T08:00:00Z",
+      "updated_at": "2026-03-20T08:00:00Z",
+      "metadata": {
+        "title": "Values unstructured time",
+        "confidence": 0.8,
+        "supporting_memory_ids": ["m_004", "m_010"],
+        "category": "travel_style"
+      }
+    },
+    {
+      "id": "m_019",
+      "type": "open_item",
+      "content": "Book Chianti wine tour for June 17. Comparing small group tour (~$150/person) vs self-drive with tastings. Self-drive is cheaper but need a designated driver.",
+      "created_at": "2026-03-18T10:00:00Z",
+      "updated_at": "2026-03-18T10:00:00Z",
+      "metadata": {
+        "priority": "medium",
+        "status": "open"
+      }
+    },
+    {
+      "id": "m_020",
+      "type": "open_item",
+      "content": "Get the name of Marco's cousin's restaurant in Florence. In the Oltrarno neighborhood. Marco mentioned it during check-in conversation.",
+      "created_at": "2026-03-19T16:00:00Z",
+      "updated_at": "2026-03-19T16:00:00Z",
+      "metadata": {
+        "priority": "low",
+        "status": "open"
+      }
+    },
+    {
+      "id": "m_021",
+      "type": "open_item",
+      "content": "Book Rome to Florence train tickets. Trenitalia Frecciarossa, target the 10:30am departure. Prices are better 2–3 weeks out.",
+      "created_at": "2026-03-16T11:00:00Z",
+      "updated_at": "2026-03-16T11:00:00Z",
+      "metadata": {
+        "priority": "high",
+        "status": "open"
+      }
+    },
+    {
+      "id": "m_022",
+      "type": "open_item",
+      "content": "Decide on boat tour along Amalfi Coast. Private boat (~$400) vs group tour (~$80/person). Leaning toward group tour.",
+      "created_at": "2026-03-19T14:00:00Z",
+      "updated_at": "2026-03-19T14:00:00Z",
+      "metadata": {
+        "priority": "low",
+        "status": "open"
+      }
+    }
+  ],
+  "entities": [
+    {
+      "id": "e_001",
+      "name": "Trastevere Airbnb",
+      "type": "place",
+      "created_at": "2026-03-15T10:30:00Z",
+      "updated_at": "2026-03-15T10:30:00Z",
+      "properties": {
+        "city": "Rome",
+        "neighborhood": "Trastevere",
+        "nights": 3,
+        "cost": "$800",
+        "status": "booked"
+      }
+    },
+    {
+      "id": "e_002",
+      "name": "Sant'Ambrogio Airbnb",
+      "type": "place",
+      "created_at": "2026-03-15T10:30:00Z",
+      "updated_at": "2026-03-15T10:30:00Z",
+      "properties": {
+        "city": "Florence",
+        "neighborhood": "Sant'Ambrogio",
+        "nights": 3,
+        "cost": "$750",
+        "status": "booked"
+      }
+    },
+    {
+      "id": "e_003",
+      "name": "Ravello Villa",
+      "type": "place",
+      "created_at": "2026-03-16T15:00:00Z",
+      "updated_at": "2026-03-16T15:00:00Z",
+      "properties": {
+        "city": "Ravello",
+        "nights": 4,
+        "cost": "$1,250",
+        "status": "booked",
+        "notes": "Terrace with coast view, full kitchen, parking included"
+      }
+    },
+    {
+      "id": "e_004",
+      "name": "Marco",
+      "type": "person",
+      "created_at": "2026-03-17T11:00:00Z",
+      "updated_at": "2026-03-17T11:00:00Z",
+      "properties": {
+        "role": "Rome Airbnb host",
+        "note": "His cousin runs a restaurant in Oltrarno, Florence"
+      }
+    },
+    {
+      "id": "e_005",
+      "name": "Da Enzo",
+      "type": "place",
+      "created_at": "2026-03-19T10:00:00Z",
+      "updated_at": "2026-03-19T10:00:00Z",
+      "properties": {
+        "city": "Rome",
+        "neighborhood": "Trastevere",
+        "cuisine": "Classic Roman",
+        "note": "Book ahead"
+      }
+    },
+    {
+      "id": "e_006",
+      "name": "Trattoria Mario",
+      "type": "place",
+      "created_at": "2026-03-19T10:00:00Z",
+      "updated_at": "2026-03-19T10:00:00Z",
+      "properties": {
+        "city": "Florence",
+        "note": "No reservations, go early, cash only"
+      }
+    },
+    {
+      "id": "e_007",
+      "name": "Cumpa Cosimo",
+      "type": "place",
+      "created_at": "2026-03-19T10:00:00Z",
+      "updated_at": "2026-03-19T10:00:00Z",
+      "properties": {
+        "city": "Ravello",
+        "note": "Local institution"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "id": "r_001",
+      "source_entity_id": "e_004",
+      "target_entity_id": "e_001",
+      "type": "located_in",
+      "created_at": "2026-03-17T11:00:00Z",
+      "metadata": {
+        "note": "Marco is the host at this Airbnb"
+      }
+    }
+  ],
+  "topics": [
+    { "id": "t_001", "name": "Rome", "sort_order": 1 },
+    { "id": "t_002", "name": "Florence", "sort_order": 2 },
+    { "id": "t_003", "name": "Amalfi Coast", "sort_order": 3 },
+    { "id": "t_004", "name": "Budget", "sort_order": 4 },
+    { "id": "t_005", "name": "Dining", "sort_order": 5 }
+  ],
+  "memory_entity_links": [
+    { "memory_id": "m_008", "entity_id": "e_001", "role": "mentioned" },
+    { "memory_id": "m_009", "entity_id": "e_002", "role": "mentioned" },
+    { "memory_id": "m_009", "entity_id": "e_004", "role": "mentioned" },
+    { "memory_id": "m_010", "entity_id": "e_003", "role": "mentioned" },
+    { "memory_id": "m_012", "entity_id": "e_005", "role": "mentioned" },
+    { "memory_id": "m_012", "entity_id": "e_006", "role": "mentioned" },
+    { "memory_id": "m_012", "entity_id": "e_007", "role": "mentioned" },
+    { "memory_id": "m_013", "entity_id": "e_003", "role": "subject" },
+    { "memory_id": "m_020", "entity_id": "e_004", "role": "mentioned" }
+  ],
+  "memory_ref_links": [],
+  "refs": [],
+  "config": {
+    "system_instructions": "You are answering questions about an Italy trip planned for June 2026. Use the provided trip context as the primary source. The querying user's personal preferences (dietary restrictions, interests, budget sensitivity) should enhance your answers. Do not fabricate trip details that are not in the context — if something was not planned or decided, say so.",
+    "mode_instructions": "This silo is in augmented mode. Answer from silo content first. The user's personal context may enrich answers (e.g. dietary needs, preferences). Do not use general world knowledge to fill gaps in trip planning. If a detail is not in the silo and cannot be inferred from the user's context, indicate it is unresolved.",
+    "welcome_summary": "This is a two-week Italy trip plan covering Rome, Florence, and the Amalfi Coast (Ravello) for June 12–22, 2026. It includes the full itinerary, accommodation details, restaurant research, budget breakdown, and key decisions.",
+    "welcome_message": "Welcome to the Italy Trip silo! This contains everything we've planned so far for our June trip. Feel free to ask about the itinerary, dining options, budget, or any of the decisions we've made. There are a few open items still to resolve — check those out too.",
+    "suggested_prompts": [
+      "What's the plan for Florence?",
+      "Where should we eat in Rome?",
+      "Why did we skip Venice?",
+      "What's still left to book?",
+      "How does the budget break down?"
+    ],
+    "citation_required": false
+  }
+}

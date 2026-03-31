@@ -1,0 +1,27 @@
+{
+  "spec": "0.1.0",
+  "min_reader": "0.1.0",
+  "id": "silo_a1b2c3d4-5678-9012-abcd-ef0123456789",
+  "title": "Italy Trip — June 2026",
+  "description": "Two-week trip through Rome, Florence, and the Amalfi Coast. Covers itinerary, accommodations, dining, transportation, and budget.",
+  "created_at": "2026-03-15T10:30:00Z",
+  "updated_at": "2026-03-21T14:22:00Z",
+  "mode": "augmented",
+  "creator": {
+    "name": "Shawn",
+    "uri": "user_shawn_abc123"
+  },
+  "subject_entity_id": null,
+  "sharing": {
+    "access_mode": "read_write",
+    "allow_reshare": true
+  },
+  "tags": ["travel", "italy", "vacation"],
+  "stats": {
+    "memory_count": 22,
+    "entity_count": 7,
+    "ref_count": 0,
+    "ref_size_bytes": 0
+  },
+  "extensions": {}
+}

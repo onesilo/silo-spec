@@ -1,0 +1,294 @@
+{
+  "memories": [
+    {
+      "id": "m_001",
+      "type": "fact",
+      "content": "Meridian Labs, Inc. Delaware C-Corp, incorporated September 2024. Headquarters: San Francisco, CA. Fully remote with quarterly offsites.",
+      "created_at": "2026-01-10T09:00:00Z",
+      "updated_at": "2026-01-10T09:00:00Z",
+      "metadata": { "key": "company_info", "confidence": 1.0, "category": "basics" }
+    },
+    {
+      "id": "m_002",
+      "type": "fact",
+      "content": "18 full-time employees as of March 2026. 12 engineering, 3 product/design, 2 GTM, 1 operations.",
+      "created_at": "2026-03-10T10:00:00Z",
+      "updated_at": "2026-03-10T10:00:00Z",
+      "metadata": { "key": "headcount", "confidence": 1.0, "category": "team" }
+    },
+    {
+      "id": "m_003",
+      "type": "fact",
+      "content": "Seed round: $4.2M closed November 2025. Led by Foundry Ventures with participation from Abstract VC and 6 angels. Pre-money valuation: $18M.",
+      "created_at": "2026-01-10T09:00:00Z",
+      "updated_at": "2026-01-10T09:00:00Z",
+      "metadata": { "key": "funding", "confidence": 1.0, "category": "financials" }
+    },
+    {
+      "id": "m_004",
+      "type": "fact",
+      "content": "$380K ARR as of March 2026, growing approximately 18% month-over-month since launch. 42 paying teams, mix of mid-market (60%) and SMB (40%).",
+      "created_at": "2026-03-20T16:45:00Z",
+      "updated_at": "2026-03-20T16:45:00Z",
+      "metadata": { "key": "arr", "confidence": 1.0, "category": "financials" },
+      "updated_by": "user_alex_cfo"
+    },
+    {
+      "id": "m_005",
+      "type": "fact",
+      "content": "Runway: 22 months at current burn (~$160K/month). Targeting Series A in Q4 2026. Target: $15M at $60–75M pre. Milestones: $1M ARR, 100 paying teams, <5% monthly churn.",
+      "created_at": "2026-03-20T16:45:00Z",
+      "updated_at": "2026-03-20T16:45:00Z",
+      "metadata": { "key": "runway", "confidence": 1.0, "category": "financials" },
+      "updated_by": "user_alex_cfo"
+    },
+    {
+      "id": "m_006",
+      "type": "narrative",
+      "content": "Meridian is building the operating system for hardware engineering teams. Hardware development is still managed with spreadsheets, PDFs, and tribal knowledge — the same way software was managed before GitHub and Linear. We believe hardware teams deserve purpose-built tools that understand their workflows: BOMs, ECOs, compliance, supplier management, and test data — connected in one system instead of scattered across 12 tools. Our vision is that every hardware product shipped in the world runs through Meridian.",
+      "created_at": "2026-01-15T10:00:00Z",
+      "updated_at": "2026-01-15T10:00:00Z",
+      "metadata": { "title": "Company Vision", "topic": "vision", "section_order": 1 },
+      "updated_by": "user_sarah_ceo"
+    },
+    {
+      "id": "m_007",
+      "type": "narrative",
+      "content": "Make hardware engineering as collaborative and fast as software engineering. We do this by replacing fragmented tools with one connected platform that hardware teams actually want to use.",
+      "created_at": "2026-01-15T10:00:00Z",
+      "updated_at": "2026-01-15T10:00:00Z",
+      "metadata": { "title": "Mission Statement", "topic": "mission", "section_order": 2 },
+      "updated_by": "user_sarah_ceo"
+    },
+    {
+      "id": "m_008",
+      "type": "narrative",
+      "content": "Meridian is a web-based platform (React + Go) with three core modules: 1) BOM Management — multi-level bill of materials with real-time costing, supplier alternates, and lifecycle tracking. Imports from Altium, KiCad, and SolidWorks. Primary entry point for new customers. 2) Change Management — engineering change orders (ECOs) with approval workflows, impact analysis, and revision history. Beta with 15 teams. 3) Compliance Tracker — maps components to regulatory requirements (RoHS, REACH, ITAR, EAR). Auto-flags non-compliant parts. Early development, targeting Q3 2026 launch. Integrations: Altium, KiCad, SolidWorks, Octopart, DigiKey, Mouser, Jira, Slack.",
+      "created_at": "2026-03-10T11:30:00Z",
+      "updated_at": "2026-03-10T11:30:00Z",
+      "metadata": { "title": "Product Overview", "topic": "product", "section_order": 3 },
+      "updated_by": "user_james_cto"
+    },
+    {
+      "id": "m_009",
+      "type": "narrative",
+      "content": "Bottom-up PLG with sales-assist for expansion. Free tier: 1 project, 2 users, basic BOM management. Team tier ($49/user/month): unlimited projects, change management, integrations, collaboration. Company tier ($99/user/month): compliance tracker, SSO, audit log, API access, priority support. Current motion: 1) Content marketing targeting hardware engineering leads on LinkedIn and Hacker News. 2) Discord community with 1,200 members and weekly office hours. 3) Outbound — 20 hardware teams/week on LinkedIn, 28% demo-to-paid conversion. 4) Exploring integration partnerships with Altium and OnShape.",
+      "created_at": "2026-03-15T09:00:00Z",
+      "updated_at": "2026-03-15T09:00:00Z",
+      "metadata": { "title": "Go-To-Market Strategy", "topic": "gtm", "section_order": 4 },
+      "updated_by": "user_priya_coo"
+    },
+    {
+      "id": "m_010",
+      "type": "narrative",
+      "content": "Direct competitors: 1) Arena Solutions (PTC) — enterprise PLM, $50K+ ACV, heavy implementation. We win on speed-to-value, price, and UX. We lose on breadth and enterprise compliance. 2) OpenBOM — cloud BOM tool for small teams, similar price. We differentiate on change management, integration depth, and multi-level BOM handling. 3) Propel — Salesforce-native PLM. Better for non-Salesforce teams. Indirect competitors: spreadsheets (biggest by volume), Airtable (improvised BOM tool), and internal tools. Positioning: 'The first BOM and change management platform built for how hardware teams actually work.'",
+      "created_at": "2026-03-01T16:00:00Z",
+      "updated_at": "2026-03-01T16:00:00Z",
+      "metadata": { "title": "Competitive Landscape", "topic": "competitive", "section_order": 5 },
+      "updated_by": "user_sarah_ceo"
+    },
+    {
+      "id": "m_011",
+      "type": "narrative",
+      "content": "Sarah Chen (CEO/co-founder): 8 years at Apple, mechanical engineering lead on AirPods. James Wu (CTO/co-founder): ex-Stripe infrastructure, built internal BOM tools at a robotics startup. Priya Sharma (COO): ex-Notion ops, joined January 2026. Alex Torres (CFO, fractional): also works with two other seed-stage companies. Engineering: 4 backend (Go), 3 frontend (React), 2 infra/DevOps, 2 integrations, 1 ML. Key hires needed: 1 senior designer (UX is a differentiator), 1 enterprise sales rep (for compliance tracker launch).",
+      "created_at": "2026-03-10T10:00:00Z",
+      "updated_at": "2026-03-10T10:00:00Z",
+      "metadata": { "title": "Team", "topic": "team", "section_order": 6 },
+      "updated_by": "user_priya_coo"
+    },
+    {
+      "id": "m_012",
+      "type": "narrative",
+      "content": "One-liner: 'The operating system for hardware engineering teams.' Elevator pitch: 'Hardware teams still manage BOMs in spreadsheets, changes over email, and compliance in PDFs. Meridian connects all of it in one platform — so engineers spend time building products, not managing tools.' What we are NOT: a PLM system, a spreadsheet replacement, an ERP. Tone: technical but approachable. No buzzwords. Specific, concrete, honest.",
+      "created_at": "2026-02-15T13:00:00Z",
+      "updated_at": "2026-02-15T13:00:00Z",
+      "metadata": { "title": "Messaging Guidelines", "topic": "messaging", "section_order": 7 },
+      "updated_by": "user_sarah_ceo"
+    },
+    {
+      "id": "m_013",
+      "type": "decision",
+      "content": "Go-to-market via bottom-up PLG, not enterprise sales. Seed-stage resources cannot support 6–12 month enterprise sales cycles. PLG acquires teams at low CAC and proves product-market fit with usage data. Enterprise sales comes after Series A with the compliance tracker and a sales team.",
+      "created_at": "2026-01-20T10:00:00Z",
+      "updated_at": "2026-01-20T10:00:00Z",
+      "metadata": {
+        "title": "PLG over enterprise sales",
+        "alternatives_considered": ["Enterprise-first with 2 AEs", "Hybrid from day one"],
+        "decided_by": ["user_sarah_ceo", "user_james_cto", "user_priya_coo"],
+        "decided_at": "2026-01-20",
+        "confidence": 1.0,
+        "status": "final"
+      }
+    },
+    {
+      "id": "m_014",
+      "type": "decision",
+      "content": "Build compliance tracker in-house rather than acquire or partner. Compliance data is a moat — owning the engine means controlling the most valuable data layer. Acquiring ComplianceDB ($2M) would mean integrating another data model. Partnering with SiliconExpert creates third-party dependency on the most strategic feature. Trade-off: 6 months of engineering investment.",
+      "created_at": "2026-02-28T14:00:00Z",
+      "updated_at": "2026-02-28T14:00:00Z",
+      "metadata": {
+        "title": "Build compliance in-house",
+        "alternatives_considered": ["Acquire ComplianceDB", "Partner with SiliconExpert API"],
+        "decided_by": ["user_sarah_ceo", "user_james_cto"],
+        "decided_at": "2026-02-28",
+        "confidence": 0.9,
+        "status": "final"
+      }
+    },
+    {
+      "id": "m_015",
+      "type": "decision",
+      "content": "Per-seat pricing at $49/$99/month, not usage-based. Hardware teams need predictable costs for budget approval. Per-seat is simple and aligns with how they already buy tools (Altium, SolidWorks). $49 is an expense-report purchase. $99 requires manager approval but is far below Arena/Propel.",
+      "created_at": "2026-01-10T11:00:00Z",
+      "updated_at": "2026-01-10T11:00:00Z",
+      "metadata": {
+        "title": "Per-seat pricing",
+        "alternatives_considered": ["Usage-based (per BOM line item)", "Flat tier pricing ($199/$499/$999 per team)"],
+        "decided_by": ["user_sarah_ceo", "user_alex_cfo"],
+        "decided_at": "2026-01-10",
+        "confidence": 1.0,
+        "status": "final"
+      }
+    },
+    {
+      "id": "m_016",
+      "type": "insight",
+      "content": "BOM management is the strongest acquisition hook — teams see immediate value once they load their first BOM. Change management and compliance are retention and expansion drivers, not acquisition drivers.",
+      "created_at": "2026-03-18T10:00:00Z",
+      "updated_at": "2026-03-18T10:00:00Z",
+      "metadata": {
+        "title": "BOM is the acquisition hook",
+        "confidence": 0.85,
+        "supporting_memory_ids": ["m_008", "m_009"],
+        "category": "product_strategy"
+      }
+    },
+    {
+      "id": "m_017",
+      "type": "open_item",
+      "content": "Finalize Altium partnership terms. In discussion with their partnerships team about listing Meridian in the integration marketplace. Would give distribution to 30K+ Altium users. Waiting on legal review.",
+      "created_at": "2026-03-15T14:00:00Z",
+      "updated_at": "2026-03-15T14:00:00Z",
+      "metadata": { "priority": "high", "status": "open" }
+    },
+    {
+      "id": "m_018",
+      "type": "open_item",
+      "content": "Decide on ITAR compliance approach for the platform itself. Some defense/aerospace customers need ITAR-compliant hosting. Options: dedicated AWS GovCloud deployment vs partnering with a managed ITAR hosting provider.",
+      "created_at": "2026-03-10T16:00:00Z",
+      "updated_at": "2026-03-10T16:00:00Z",
+      "metadata": { "priority": "medium", "status": "open" }
+    }
+  ],
+  "entities": [
+    {
+      "id": "e_meridian",
+      "name": "Meridian Labs",
+      "type": "company",
+      "created_at": "2026-01-10T09:00:00Z",
+      "updated_at": "2026-03-20T16:45:00Z",
+      "properties": {
+        "legal_name": "Meridian Labs, Inc.",
+        "incorporation": "Delaware C-Corp, September 2024",
+        "headquarters": "San Francisco, CA",
+        "website": "meridianlabs.com"
+      }
+    },
+    {
+      "id": "e_sarah",
+      "name": "Sarah Chen",
+      "type": "person",
+      "created_at": "2026-01-10T09:00:00Z",
+      "updated_at": "2026-01-10T09:00:00Z",
+      "properties": { "title": "CEO & Co-founder", "email": "sarah@meridianlabs.com" }
+    },
+    {
+      "id": "e_james",
+      "name": "James Wu",
+      "type": "person",
+      "created_at": "2026-01-10T09:00:00Z",
+      "updated_at": "2026-01-10T09:00:00Z",
+      "properties": { "title": "CTO & Co-founder", "email": "james@meridianlabs.com" }
+    },
+    {
+      "id": "e_priya",
+      "name": "Priya Sharma",
+      "type": "person",
+      "created_at": "2026-01-15T09:00:00Z",
+      "updated_at": "2026-01-15T09:00:00Z",
+      "properties": { "title": "COO", "email": "priya@meridianlabs.com" }
+    },
+    {
+      "id": "e_foundry",
+      "name": "Foundry Ventures",
+      "type": "company",
+      "created_at": "2026-01-10T09:00:00Z",
+      "updated_at": "2026-01-10T09:00:00Z",
+      "properties": { "role": "Lead investor, Seed round", "partner": "David Kim" }
+    },
+    {
+      "id": "e_arena",
+      "name": "Arena Solutions (PTC)",
+      "type": "competitor",
+      "created_at": "2026-03-01T16:00:00Z",
+      "updated_at": "2026-03-01T16:00:00Z",
+      "properties": { "segment": "Enterprise PLM", "acv": "$50K+", "weakness": "Slow, expensive, poor UX" }
+    },
+    {
+      "id": "e_openbom",
+      "name": "OpenBOM",
+      "type": "competitor",
+      "created_at": "2026-03-01T16:00:00Z",
+      "updated_at": "2026-03-01T16:00:00Z",
+      "properties": { "segment": "SMB BOM tool", "weakness": "No change management, shallow integrations" }
+    }
+  ],
+  "relationships": [
+    { "id": "r_001", "source_entity_id": "e_sarah", "target_entity_id": "e_meridian", "type": "founded", "created_at": "2026-01-10T09:00:00Z" },
+    { "id": "r_002", "source_entity_id": "e_james", "target_entity_id": "e_meridian", "type": "founded", "created_at": "2026-01-10T09:00:00Z" },
+    { "id": "r_003", "source_entity_id": "e_priya", "target_entity_id": "e_meridian", "type": "works_at", "created_at": "2026-01-15T09:00:00Z" },
+    { "id": "r_004", "source_entity_id": "e_foundry", "target_entity_id": "e_meridian", "type": "invested_in", "created_at": "2026-01-10T09:00:00Z" },
+    { "id": "r_005", "source_entity_id": "e_arena", "target_entity_id": "e_meridian", "type": "competes_with", "created_at": "2026-03-01T16:00:00Z" },
+    { "id": "r_006", "source_entity_id": "e_openbom", "target_entity_id": "e_meridian", "type": "competes_with", "created_at": "2026-03-01T16:00:00Z" }
+  ],
+  "topics": [
+    { "id": "t_001", "name": "Vision & Mission", "sort_order": 1 },
+    { "id": "t_002", "name": "Product", "sort_order": 2 },
+    { "id": "t_003", "name": "Go-To-Market", "sort_order": 3 },
+    { "id": "t_004", "name": "Competitive Landscape", "sort_order": 4 },
+    { "id": "t_005", "name": "Team", "sort_order": 5 },
+    { "id": "t_006", "name": "Financials", "sort_order": 6 },
+    { "id": "t_007", "name": "Messaging", "sort_order": 7 }
+  ],
+  "memory_entity_links": [
+    { "memory_id": "m_001", "entity_id": "e_meridian", "role": "subject" },
+    { "memory_id": "m_003", "entity_id": "e_foundry", "role": "mentioned" },
+    { "memory_id": "m_003", "entity_id": "e_meridian", "role": "subject" },
+    { "memory_id": "m_010", "entity_id": "e_arena", "role": "mentioned" },
+    { "memory_id": "m_010", "entity_id": "e_openbom", "role": "mentioned" },
+    { "memory_id": "m_011", "entity_id": "e_sarah", "role": "mentioned" },
+    { "memory_id": "m_011", "entity_id": "e_james", "role": "mentioned" },
+    { "memory_id": "m_011", "entity_id": "e_priya", "role": "mentioned" },
+    { "memory_id": "m_013", "entity_id": "e_sarah", "role": "decided_by" },
+    { "memory_id": "m_013", "entity_id": "e_james", "role": "decided_by" },
+    { "memory_id": "m_014", "entity_id": "e_sarah", "role": "decided_by" },
+    { "memory_id": "m_014", "entity_id": "e_james", "role": "decided_by" },
+    { "memory_id": "m_015", "entity_id": "e_sarah", "role": "decided_by" }
+  ],
+  "memory_ref_links": [],
+  "refs": [],
+  "config": {
+    "system_instructions": "You are answering questions about Meridian Labs using only the content provided in this silo. This is an internal company knowledge base. Do not fabricate company information, metrics, or strategy details. If information is not present in the silo, state that explicitly.",
+    "mode_instructions": "This silo is in container mode. You MUST answer using ONLY content from this silo. Do NOT use general world knowledge. Do NOT infer or fabricate information about the company. If the answer is not present, respond with: 'This information is not covered in the Meridian knowledge base.'",
+    "welcome_summary": "Internal knowledge base for Meridian Labs — the operating system for hardware engineering teams. Covers company vision, product, GTM strategy, team, financials, competitive landscape, and key strategic decisions.",
+    "welcome_message": "This is the Meridian company knowledge base. It contains our vision, product details, go-to-market strategy, team info, financials, and strategic decisions. Use it as the source of truth for how we talk about the company. If something isn't covered here, flag it so we can add it.",
+    "suggested_prompts": [
+      "What is Meridian's vision?",
+      "How do we differentiate from Arena Solutions?",
+      "What's our current ARR and growth rate?",
+      "What's the GTM strategy?",
+      "What are the key hiring priorities?"
+    ],
+    "citation_required": true
+  }
+}

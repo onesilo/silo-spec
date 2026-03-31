@@ -1,0 +1,33 @@
+{
+  "spec": "0.1.0",
+  "min_reader": "0.1.0",
+  "id": "silo_c9d8e7f6-5432-1098-fedc-ba9876543210",
+  "title": "Meridian — Company Knowledge Base",
+  "description": "Internal knowledge base for Meridian Labs. Contains company vision, strategy, product, team, GTM, competitive landscape, and key metrics.",
+  "created_at": "2026-01-10T09:00:00Z",
+  "updated_at": "2026-03-20T16:45:00Z",
+  "mode": "container",
+  "creator": {
+    "name": "Sarah Chen",
+    "uri": "user_sarah_ceo"
+  },
+  "subject_entity_id": "e_meridian",
+  "sharing": {
+    "access_mode": "read",
+    "allow_reshare": false
+  },
+  "tags": ["internal", "company", "strategy"],
+  "stats": {
+    "memory_count": 18,
+    "entity_count": 7,
+    "ref_count": 0,
+    "ref_size_bytes": 0
+  },
+  "extensions": {
+    "app.onesilo.access_roles": [
+      { "role": "owner", "principals": ["user_sarah_ceo"] },
+      { "role": "editor", "principals": ["user_james_cto", "user_priya_coo", "user_alex_cfo"] },
+      { "role": "viewer", "principals": ["group_all_employees"] }
+    ]
+  }
+}
