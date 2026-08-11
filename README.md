@@ -146,7 +146,9 @@ The format follows additive-only evolution:
 
 ## Specification
 
-The full format specification is in [`spec/v0.1.0.md`](spec/v0.1.0.md).
+The full format specification is in [`spec/v0.1.1.md`](spec/v0.1.1.md) (v0.1.0 in [`spec/v0.1.0.md`](spec/v0.1.0.md)).
+
+The **MemoryStore interface** — the standard memory abstraction One Silo agents use to remember/recall/forget against a silo, wherever it lives (cloud, node, relay, file) — is specified in [`spec/memory-store-v0.1.0.md`](spec/memory-store-v0.1.0.md).
 
 ## Examples
 
