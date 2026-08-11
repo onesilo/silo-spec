@@ -49,7 +49,8 @@ document are to be interpreted as described in
    and MUST NOT auto-confirm a write the backing surface flagged for owner
    confirmation.
 3. **Capability detection over feature flags.** Optional operations are
-   detected by presence (`store.ask != nil`), so wrappers that relocate
+   detected by presence (the operation is defined/non-null on the store),
+   so wrappers that relocate
    compute keep detection accurate by forwarding only the operations their
    inner store provides.
 4. **Provenance is append-anchored.** When an implementation attaches
